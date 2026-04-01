@@ -1,0 +1,10 @@
+<svg viewBox="0 0 640 460" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="gallery2Title">
+  <title id="gallery2Title">Chess coaching session illustration</title>
+  <rect width="640" height="460" rx="32" fill="#050915" />
+  <circle cx="150" cy="110" r="60" fill="#7de1ff" opacity="0.16" />
+  <rect x="120" y="170" width="400" height="220" rx="24" fill="#0f233c" stroke="#69ff8f" stroke-width="6" />
+  <path d="M220 240 L320 360" stroke="#7de1ff" stroke-width="20" stroke-linecap="round" />
+  <path d="M420 240 L320 360" stroke="#69ff8f" stroke-width="20" stroke-linecap="round" />
+  <circle cx="320" cy="360" r="26" fill="#7de1ff" />
+  <text x="98" y="430" fill="#bcd8ff" font-family="Inter, sans-serif" font-size="24" font-weight="700">Coaching Lab</text>
+</svg>

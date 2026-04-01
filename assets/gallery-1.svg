@@ -1,0 +1,13 @@
+<svg viewBox="0 0 640 460" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="gallery1Title">
+  <title id="gallery1Title">Chess tournament illustration</title>
+  <rect width="640" height="460" rx="32" fill="#071025" />
+  <circle cx="520" cy="120" r="70" fill="#69ff8f" opacity="0.18" />
+  <rect x="80" y="80" width="440" height="300" rx="28" fill="#0f2243" stroke="#7de1ff" stroke-width="6" />
+  <g fill="#7de1ff" opacity="0.95">
+    <circle cx="200" cy="220" r="34" />
+    <circle cx="300" cy="220" r="24" />
+    <path d="M380 190 L380 270 L445 230 Z" />
+  </g>
+  <rect x="120" y="330" width="420" height="16" rx="8" fill="#7de1ff" opacity="0.16" />
+  <text x="80" y="420" fill="#d1e3ff" font-family="Inter, sans-serif" font-size="26" font-weight="700">Club Tournament</text>
+</svg>

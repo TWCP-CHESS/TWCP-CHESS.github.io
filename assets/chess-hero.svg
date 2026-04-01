@@ -1,0 +1,25 @@
+<svg viewBox="0 0 720 520" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="heroTitle">
+  <title id="heroTitle">Neon chess artwork</title>
+  <defs>
+    <linearGradient id="heroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7de1ff" />
+      <stop offset="100%" stop-color="#69ff8f" />
+    </linearGradient>
+  </defs>
+  <rect width="720" height="520" rx="36" fill="#071023" />
+  <g opacity="0.18">
+    <circle cx="220" cy="180" r="110" fill="#7de1ff" />
+    <circle cx="520" cy="120" r="80" fill="#69ff8f" />
+  </g>
+  <path d="M140 400 L580 400 L660 260 L260 260 Z" fill="#0f2b58" stroke="#7de1ff" stroke-width="6" />
+  <path d="M200 320 L520 320 L580 260 L140 260 Z" fill="url(#heroGrad)" opacity="0.18" />
+  <path d="M190 250 L320 120 L450 250" fill="none" stroke="#7de1ff" stroke-width="16" stroke-linecap="round" />
+  <circle cx="320" cy="120" r="24" fill="#69ff8f" />
+  <rect x="280" y="280" width="160" height="18" rx="9" fill="#7de1ff" opacity="0.8" />
+  <g fill="none" stroke="#7de1ff" stroke-width="8" stroke-linecap="round">
+    <path d="M340 360 Q360 320 340 280" />
+    <path d="M380 360 Q400 320 380 280" />
+  </g>
+  <text x="72" y="470" fill="#dfefff" font-family="Inter, sans-serif" font-size="42" font-weight="800">TWCP</text>
+  <text x="72" y="510" fill="#88a6c8" font-family="Inter, sans-serif" font-size="18">Neo Futurist Chess</text>
+</svg>
