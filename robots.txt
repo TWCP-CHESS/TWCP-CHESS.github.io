@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Keep developer panel out of search results
+Disallow: /dev.html
+
+Sitemap: https://twcp-chess.github.io/sitemap.xml

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TWCP Chess Club | Dev Event Management</title>
+    <meta name="description" content="Developer event management interface for TWCP Chess Club tournaments.">
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+    <link rel="canonical" href="https://twcp-chess.github.io/dev.html">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="ambient-glow"></div>
+    <div class="page">
+        <header class="site-header">
+            <a class="brand" href="index.html">
+                <span class="brand-mark"><img src="assets/logo.png" alt="TWCP Chess Club crest"></span>
+                <span class="brand-title">
+                    <small>TWCP</small>
+                    <strong>Dev Manager 2026</strong>
+                </span>
+            </a>
+            <nav class="site-nav">
+                <a href="index.html">Home</a>
+                <a href="tournaments.html">Tournaments</a>
+                <a href="dev.html">Dev</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="panel auth-wrap in-view" id="login-panel">
+                <div class="section-heading">
+                    <div>
+                        <h2>Developer Access</h2>
+                        <p>Enter the dev password to unlock event management tools.</p>
+                    </div>
+                </div>
+                <form id="login-form" class="auth-form">
+                    <label for="dev-password">Password</label>
+                    <input type="password" id="dev-password" autocomplete="off" required>
+                    <button type="submit" class="button button-primary">Unlock Dev Tools</button>
+                    <p id="login-message" class="muted-line"></p>
+                </form>
+            </section>
+
+            <section class="panel hidden" id="manager-panel">
+                <div class="section-heading">
+                    <div>
+                        <h2>Event Management</h2>
+                        <p>Add, review, or delete tournaments shown on the public tournaments page.</p>
+                    </div>
+                </div>
+                <div class="dev-toolbar">
+                    <button id="logout-button" class="button button-secondary" type="button">Lock Dev Panel</button>
+                    <a href="tournaments.html" class="button button-primary">Open Tournament Page</a>
+                </div>
+                <div class="card" style="margin-top: 16px;">
+                    <form id="event-form" class="event-form">
+                        <label for="event-name">Tournament Name</label>
+                        <input id="event-name" required>
+
+                        <label for="event-date">Date</label>
+                        <input id="event-date" type="date" required>
+
+                        <label for="event-location">Location</label>
+                        <input id="event-location" required>
+
+                        <label for="event-type">Type</label>
+                        <select id="event-type" required>
+                            <option value="Rapid">Rapid</option>
+                            <option value="Blitz">Blitz</option>
+                            <option value="Classical">Classical</option>
+                            <option value="Mixed">Mixed</option>
+                        </select>
+
+                        <label for="event-notes">Notes</label>
+                        <textarea id="event-notes" placeholder="Format, rounds, sections, registration details..."></textarea>
+
+                        <button type="submit" class="button button-primary">Add Tournament</button>
+                    </form>
+                </div>
+
+                <div class="section-heading" style="margin-top: 22px;">
+                    <div>
+                        <h2>Current Tournament Entries</h2>
+                    </div>
+                </div>
+                <div id="dev-event-list" class="event-list"></div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <small>TWCP Dev Event Management · 2026</small>
+            <small>&copy; <span id="year"></span> TWCP Chess Club</small>
+        </footer>
+    </div>
+
+    <script src="dev.js"></script>
+</body>
+</html>
