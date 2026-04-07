@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const nextEvent = document.querySelector('.next-event');
     const nextEventInline = document.querySelector('.next-event-inline');
-    if (nextEvent) {
+    if (nextEvent || nextEventInline) {
         const now = new Date();
         const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
         const upcoming = saved
@@ -38,14 +38,18 @@ document.addEventListener('DOMContentLoaded', () => {
         if (upcoming) {
             const eventDate = new Date(upcoming.date);
             const daysLeft = Math.ceil((eventDate - now) / (1000 * 60 * 60 * 24));
-            nextEvent.textContent = `${daysLeft} days until ${upcoming.name}`;
+            if (nextEvent) {
+                nextEvent.textContent = `${daysLeft} days until ${upcoming.name}`;
+            }
             if (nextEventInline) {
                 nextEventInline.textContent = `${upcoming.name} (${eventDate.toLocaleDateString()})`;
             }
         } else {
             const nextSession = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 7);
             const daysLeft = Math.ceil((nextSession - now) / (1000 * 60 * 60 * 24));
-            nextEvent.textContent = `${daysLeft} days until the next club meetup`;
+            if (nextEvent) {
+                nextEvent.textContent = `${daysLeft} days until the next club meetup`;
+            }
             if (nextEventInline) {
                 nextEventInline.textContent = 'No tournaments posted yet';
             }
